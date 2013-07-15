@@ -63,11 +63,11 @@
 %	BOOK META-INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Book Title} % Title of the book
+\title{A Proposal for an \\ Open Wireless \\ Sensor Network \\On-Line Course} % Title of the book
 
-\author{John Smith} % Author
+\author{Luis Sanabria et al.} % Author
 
-\publisher{Publisher Name} % Publisher
+\publisher{Universitat Pompeu Fabra} % Publisher
 
 %----------------------------------------------------------------------------------------
 
@@ -79,12 +79,12 @@
 %	EPIGRAPH
 %----------------------------------------------------------------------------------------
 
-\thispagestyle{empty}
-\openepigraph{Quotation 1}{Author, {\itshape Source}}
-\vfill
-\openepigraph{Quotation 2}{Author}
-\vfill
-\openepigraph{Quotation 3}{Author}
+%\thispagestyle{empty}
+%\openepigraph{Quotation 1}{Author, {\itshape Source}}
+%\vfill
+%\openepigraph{Quotation 2}{Author}
+%\vfill
+%\openepigraph{Quotation 3}{Author}
 
 %----------------------------------------------------------------------------------------
 
@@ -94,22 +94,22 @@
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
 
-\newpage
-\begin{fullwidth}
-~\vfill
-\thispagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{\baselineskip}
-Copyright \copyright\ \the\year\ \thanklessauthor
-
-\par\smallcaps{Published by \thanklesspublisher}
-
-\par\smallcaps{\url{http://www.bookwebsite.com}}
-
-\par License information.\index{license}
-
-\par\textit{First printing, \monthyear}
-\end{fullwidth}
+%\newpage
+%\begin{fullwidth}
+%~\vfill
+%\thispagestyle{empty}
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{\baselineskip}
+%Copyright \copyright\ \the\year\ \thanklessauthor
+%
+%\par\smallcaps{Published by \thanklesspublisher}
+%
+%\par\smallcaps{\url{http://www.bookwebsite.com}}
+%
+%\par License information.\index{license}
+%
+%\par\textit{First printing, \monthyear}
+%\end{fullwidth}
 
 %----------------------------------------------------------------------------------------
 
@@ -127,27 +127,126 @@ Copyright \copyright\ \the\year\ \thanklessauthor
 %	DEDICATION PAGE
 %----------------------------------------------------------------------------------------
 
-\cleardoublepage
-~\vfill
-\begin{doublespace}
-\noindent\fontsize{18}{22}\selectfont\itshape
-\nohyphenation
-Dedicated to my family and friends.
-\end{doublespace}
-\vfill
-\vfill
+%\cleardoublepage
+%~\vfill
+%\begin{doublespace}
+%\noindent\fontsize{18}{22}\selectfont\itshape
+%\nohyphenation
+%Dedicated to my family and friends.
+%\end{doublespace}
+%\vfill
+%\vfill
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
 \cleardoublepage
-\chapter*{Introduction} % The asterisk leaves out this chapter from the table of contents
+\chapter{Introduction} % The asterisk leaves out this chapter from the table of contents
 
-Citation example \cite{Tufte2001}, notice how the citation is in the margin. This is an example of how to add something to the index at the end of the document.\index{citation}
+It is a commonplace that the Internet is changing our lives.
+It is changing the way we learn and also the way we contribute to our communities and organize ourselves.
+In this course we will explore the bottom-up creation of a wireless sensor network that can be used to gather and share data.
+This gathering and sharing of data empowers the citizenship to monitor and interact with the environment.
 
-\newthought{Example of} the \texttt{newthought} command for starting new sections. Typography examples: \allcaps{all caps} and \smallcaps{small caps}.
+\begin{marginfigure}
+\includegraphics[width=\linewidth]{SCK}
+\caption{Smart Citizen Kit units. These are wireless nodes with multiple sensors.}
+\label{fig:SCK}
+\end{marginfigure}
 
+We are interested in the bottom-up models.
+We use the terms peer-to-peer, do-it-ourselves and bottom-up interchangeably.
+The idea that we want to transmit with bottom-up is that the participant takes an active role and contributes to the community rather than being a mere consumer.
+For this reason, we teach the first simple steps to build, configure and program a sensor that uploads the gathered data to the Internet to make it publicly available to those that are interested in.
+
+
+%------------------------------------------------
+
+\chapter{Methodology}
+
+The course is organized in different units.
+Each of the units is a basic ingredient in the construction of a bottom-up wireless sensor networks.
+For each of the units, we will follow the same class dynamics.
+
+\section{Class dynamics}
+
+The participants will watch a motivation video and a video tutorial.
+The tutorial will describe how to complete a simple project and will be complemented.
+Then, the participants have to collaborate to solve a challenge.
+The teachers offer a suggested challenge, but the participants are free to take other challenges that are relevant to them and to the course.
+Finally, the participants have to carefully document their works so that it can be evaluated, reproduced and discussed by the other participants.
+
+The first and the last unit are slightly different.
+In the first unit there is no project as the focus is on the presentation of the participants, the course itself and the discussion of the expectations on the course.
+The last unit is also special because the participants design, plan, execute and document their own project. 
+The courses finishes with an exhibition of the personal projects.
+
+\section{In-class courses}
+Besides the online offering, the course will also offered in-class for students registered at Universitat Pompeu Fabra.
+Furthermore it will be possible to use the material for Summer Schools to promote the University and Bottom-up Initiatives.
+
+\section{Resources}
+
+
+The course will be offered in the P2P University course platform.
+The students will be offered the videos, a lab assignment guide with all the details of the different projects, and the discussion and feedback tools of the P2P university platform.
+The guide will be adapted from the current guide for the existing in-class course on wireless sensor networks.
+
+\begin{marginfigure}
+\includegraphics[width=\linewidth]{p2pu}
+\caption{The motto of the P2P University is ``Learn Anything with Your Peers''}
+\label{fig:p2pu}
+\end{marginfigure}
+
+\section{Additional Material}
+
+\begin{itemize}
+\item Robert Faludi ``Building Wireless Sensor Networks''
+\item Alejandro Andreu ``Open Sensor Network''
+\end{itemize}
+
+%------------------------------------------------
+
+\chapter{Team}
+
+\begin{itemize}
+\item Lead teacher: Luis Sanabria-Russo (Universitat Pompeu Fabra)
+\item Other members of the team:
+\begin{itemize}
+\item Laia Albo (Universitat Pompeu Fabra)
+\item Alejandro Andreu (Universitat Pompeu Fabra)
+\item Massimo Banzi (Arduino)
+\item Jaume Barcelo (Universitat Pompeu Fabra)
+\item Michel Bauwens (P2P Foudation)
+\item Tiberius Brastaviceanu (Sensorica)
+\item Tomas Diez (FabLab Barcelona)
+\item Albert Domingo (Universitat Pompeu Fabra)
+\item Robert Faludi (Digi International)
+\item Manuel Palacin (Universitat Pompeu Fabra)
+\item Alex Posada (Media Interaction Design Lab)
+\end{itemize}
+\end{itemize}
+
+\begin{marginfigure}
+\includegraphics[width=\linewidth]{luis}
+\caption{Luis Sanabria-Russo currently teaches a course on Wireless Sensor Networks at Universitat Pompeu Fabra}
+\label{fig:luis}
+\end{marginfigure}
+
+
+
+%------------------------------------------------
+
+\chapter{Results and Impact}
+
+This course builds upon successful experiences. There is already an existing course that received very good feedback from the students. There is also a degree thesis by one of the students that was presented in Battlemesh, Aalborg University, and attracted the attention of the P2P Foundation. 
+
+The idea of bottom-up smart cities implemented by Smart Citizen was applauded in kick starter and received over \$60,000 in crowdfunding. The hardware used in the course is the XBee that was also used in the best-selling book by Rober Faludi “Building Wireless Sensor Networks”. More than one million Arduino have been sold confirming the success of their open business model.
+
+The main goal of this course is to strengthen the community by teaching very basic skills to a large audience. After completing the course, the participants will be able to continue on their own with more advanced projects. It is a basic digital education for everyone. People with no or little background in technology will be do the first steps in programming, electronics, and sensing projects.
+
+People that  have taken the course will be able to contribute to the creation of bottom-up smart cities.
 %------------------------------------------------
 
 \section{Figures}
@@ -160,7 +259,6 @@ Citation example \cite{Tufte2001}, notice how the citation is in the margin. Thi
 \label{fig:marginfig}
 \end{marginfigure}
 
-\lipsum[2]
 
 \begin{figure*}[h]
 \includegraphics[width=\linewidth]{sine.pdf}
@@ -169,7 +267,6 @@ Citation example \cite{Tufte2001}, notice how the citation is in the margin. Thi
 \label{fig:fullfig}
 \end{figure*}
 
-\lipsum[3]
 
 %------------------------------------------------
 
