@@ -1,0 +1,15 @@
+*.aux
+*.bbl
+*.blg
+*~
+*.ps
+*.dvi
+*.log
+*.bak
+*.old
+*.lof
+*.lot
+*.toc
+*.out
+quizzes/quiz0?/*
+quizzes/seminar0?/*
