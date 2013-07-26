@@ -1,3 +1,8 @@
+*.cls
+*.idx
+*.ilg
+*.ind
+*.backup
 *.aux
 *.bbl
 *.blg
