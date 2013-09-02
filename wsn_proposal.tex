@@ -1,147 +1,22 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Tufte-Style Book (Minimal Template)
-% LaTeX Template
-% Version 1.0 (5/1/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% IMPORTANT NOTE:
-% In addition to running BibTeX to compile the reference list from the .bib
-% file, you will need to run MakeIndex to compile the index at the end of the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[oneside]{book}   % list options between brackets
+\usepackage{graphicx}              % list packages between braces
+\graphicspath{{graphics/}}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
-
-\hypersetup{colorlinks} % Comment this line if you don't wish to have colored links
-
-\usepackage{microtype} % Improves character and word spacing
-
-\usepackage{lipsum} % Inserts dummy text
-
-\usepackage{booktabs} % Better horizontal rules in tables
-
-\usepackage{graphicx} % Needed to insert images into the document
-\graphicspath{{graphics/}} % Sets the default location of pictures
-\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
-
-\usepackage{fancyvrb} % Allows customization of verbatim environments
-\fvset{fontsize=\normalsize} % The font size of all verbatim text can be changed here
-
-\newcommand{\hangp}[1]{\makebox[0pt][r]{(}#1\makebox[0pt][l]{)}} % New command to create parentheses around text in tables which take up no horizontal space - this improves column spacing
-\newcommand{\hangstar}{\makebox[0pt][l]{*}} % New command to create asterisks in tables which take up no horizontal space - this improves column spacing
-
-\usepackage{xspace} % Used for printing a trailing space better than using a tilde (~) using the \xspace command
-
-\newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
-
-\newcommand{\openepigraph}[2]{ % This block sets up a command for printing an epigraph with 2 arguments - the quote and the author
-\begin{fullwidth}
-\sffamily\large
-\begin{doublespace}
-\noindent\allcaps{#1}\\ % The quote
-\noindent\allcaps{#2} % The author
-\end{doublespace}
-\end{fullwidth}
-}
-
-\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
-
-\usepackage{makeidx} % Used to generate the index
-\makeindex % Generate the index which is printed at the end of the document
-
-%----------------------------------------------------------------------------------------
-%	BOOK META-INFORMATION
-%----------------------------------------------------------------------------------------
-
-\title{A Proposal for an \\ Open Wireless \\ Sensor Network \\On-Line Course} % Title of the book
-
-\author{Luis Sanabria et al.} % Author
-
-\publisher{Universitat Pompeu Fabra} % Publisher
-
-%----------------------------------------------------------------------------------------
+% type user-defined commands here
 
 \begin{document}
 
-\frontmatter
+\title{A Proposal for an \\ Open Wireless \\ Sensor Network \\On-Line Course} % Title of the book
+\author{Luis Sanabria et al.} % Author
+\date{\today}    % type date between braces
+\maketitle
 
-%----------------------------------------------------------------------------------------
-%	EPIGRAPH
-%----------------------------------------------------------------------------------------
 
-%\thispagestyle{empty}
-%\openepigraph{Quotation 1}{Author, {\itshape Source}}
-%\vfill
-%\openepigraph{Quotation 2}{Author}
-%\vfill
-%\openepigraph{Quotation 3}{Author}
 
-%----------------------------------------------------------------------------------------
+
 
 \maketitle % Print the title page
 
-%----------------------------------------------------------------------------------------
-%	COPYRIGHT PAGE
-%----------------------------------------------------------------------------------------
-
-%\newpage
-%\begin{fullwidth}
-%~\vfill
-%\thispagestyle{empty}
-%\setlength{\parindent}{0pt}
-%\setlength{\parskip}{\baselineskip}
-%Copyright \copyright\ \the\year\ \thanklessauthor
-%
-%\par\smallcaps{Published by \thanklesspublisher}
-%
-%\par\smallcaps{\url{http://www.bookwebsite.com}}
-%
-%\par License information.\index{license}
-%
-%\par\textit{First printing, \monthyear}
-%\end{fullwidth}
-
-%----------------------------------------------------------------------------------------
-
-\tableofcontents % Print the table of contents
-
-%----------------------------------------------------------------------------------------
-
-\listoffigures % Print a list of figures
-
-%----------------------------------------------------------------------------------------
-
-\listoftables % Print a list of tables
-
-%----------------------------------------------------------------------------------------
-%	DEDICATION PAGE
-%----------------------------------------------------------------------------------------
-
-%\cleardoublepage
-%~\vfill
-%\begin{doublespace}
-%\noindent\fontsize{18}{22}\selectfont\itshape
-%\nohyphenation
-%Dedicated to my family and friends.
-%\end{doublespace}
-%\vfill
-%\vfill
-
-%----------------------------------------------------------------------------------------
-%	INTRODUCTION
-%----------------------------------------------------------------------------------------
-
-\cleardoublepage
 \chapter{Introduction} % The asterisk leaves out this chapter from the table of contents
 
 It is a commonplace that the Internet is changing our lives.
@@ -150,11 +25,13 @@ It is our goal to use the network to teach about the construction of new network
 In this course we will explore the bottom-up creation of a wireless sensor network that can be used to gather and share data.
 This gathering and sharing of data empowers the citizenship to monitor - and interact with - the environment.
 
-\begin{marginfigure}
-\includegraphics[width=\linewidth]{SCK}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.40\linewidth]{SCK}
 \caption{Smart Citizen Kit units. These are wireless nodes with multiple sensors.}
 \label{fig:SCK}
-\end{marginfigure}
+\end{center}
+\end{figure}
 
 We are interested in bottom-up models.
 We use the terms peer-to-peer, do-it-ourselves and bottom-up interchangeably.
@@ -201,11 +78,13 @@ This course has the following learning goals:
 By completing assignments, the participants will show their mastery of each of these aspects and will earn a badge as a reward.
 Deciding which badges will be offered in the course, the exact criteria to award a badge and designing such badges is one of the tasks of the preparation of the course.
 
-\begin{marginfigure}
-\includegraphics[width=\linewidth]{badge}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.40\linewidth]{badge}
 \caption{Example of a badge offered at the P2P University}
 \label{fig:badge}
-\end{marginfigure}
+\end{center}
+\end{figure}
 
 The P2P University offers all the necessary tools to create and award badges.
 An example of a badge is shown in Figure~\ref{fig:badge}.
@@ -244,11 +123,13 @@ And everyone is invited to learn and teach using the platform.
 The courses are not constricted to the tools of the platform itself. 
 On the contrary, they make use of all the resources available in the web such as mailing lists, blogging, micro-blogging, instant messaging, forums and video-conferences, 
 
-\begin{marginfigure}
-\includegraphics[width=\linewidth]{p2pu}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.40\linewidth]{p2pu}
 \caption{The motto of the P2P University is ``Learn Anything with Your Peers''}
 \label{fig:p2pu}
-\end{marginfigure}
+\end{center}
+\end{figure}
 
 \section{Completion rate, statistics and scientific analysis of the experience}
 
@@ -298,16 +179,20 @@ Those that cannot meet in person will also be encouraged to get acquainted with 
 % \item Setting up the P2P University on-line platform: This task involves the actual creation and configuration of the online course.
 % \end{itemize}
 
-\begin{marginfigure}
-\includegraphics[width=\linewidth]{video}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.40\linewidth]{video}
 \caption{It is necessary to shoot videos with step-by-step instructions to build the pilots or complete the assignments.}
 \label{fig:video}
-\end{marginfigure}
-\begin{marginfigure}
-\includegraphics[width=\linewidth]{lesson}
+\end{center}
+\end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.40\linewidth]{lesson}
 \caption{Most video lessons will show the teacher's face over supporting slides.}
 \label{fig:lesson}
-\end{marginfigure}
+\end{center}
+\end{figure}
 
 %------------------------------------------------
 
@@ -398,72 +283,76 @@ Albert Domingo, Manuel Palacin -TBC, (Alejandro Andreu)
 
 \begin{itemize}
 \item Lead teacher: Luis Sanabria-Russo (Universitat Pompeu Fabra)
-\begin{marginfigure}
-\includegraphics[width=0.5\linewidth]{luis}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.125\linewidth]{luis}
 \caption{Luis Sanabria-Russo}
 \label{fig:luis}
-\end{marginfigure}
+\end{center}
+\end{figure}
 \item Other members of the team:
 \begin{itemize}
 \item Laia Albo -TBC (Universitat Pompeu Fabra)
 \item Alejandro Andreu (Universitat Pompeu Fabra)
 \item Someone from Arduino -TBC (Arduino)
 \item Jaume Barcelo (Universitat Pompeu Fabra): He is a lecturer at Universitat Pompeu Fabra where he takes part in the Wireless Sensor Network course. He has also taught at Universidad Carlos III de Madrid were he took part in the opencourseware experience that published the class materials online. Together with Luis Sanabria, he has prepared the basic laboratory guide for the WSN course that has been shared with the Internet community. Jaume has taught more than 20 courses at the graduate and undergraduate level at two universities.
-\begin{marginfigure}
-\includegraphics[width=0.5\linewidth]{jaume}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.125\linewidth]{jaume}
 \caption{Jaume Barcelo}
 \label{fig:jaume}
-\end{marginfigure}
+\end{center}
+\end{figure}
 
 \item Someone from P2PF -TBC (P2P Foudation)
 \item Tiberius Brastaviceanu (Sensorica): He is founder, active member, coordinator, facilitator, engineer and product designer at Sensorica.
-\begin{marginfigure}
-\includegraphics[width=0.5\linewidth]{Tiberius}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.125\linewidth]{Tiberius}
 \caption{Tiberius Brastaviceanu}
-\end{marginfigure}
+\end{center}
+\end{figure}
 \item Guillem Camprodon (FabLab Barcelona): He is a researcher at the Institut d'Arquitectura Avancada de Catalunya (IAAC). He participates in the Smart Citizen Kit project as the main responsible for integration and project development (hardware and software).
 \item Tomas Diez (FabLab Barcelona): He is the director of FabLab Barcelona at the Institut d'Arquitectura Avancada de Catalunya (IAAC) and co-founder of the Smart Citizen Kit initiative. Tomas is also part of the master programs taught at IAAC.
-\begin{marginfigure}
-\includegraphics[width=0.5\linewidth]{tomas}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.125\linewidth]{tomas}
 \caption{Tomas Diez}
-\end{marginfigure}
+\end{center}
+\end{figure}
 \item Albert Domingo (Universitat Pompeu Fabra):
 He is currently a Ph.D. candidate at the Networking and Strategies (NeTS) group at UPF. He has also been a visitor with the Advanced Network Architecture group at MIT.
 
 He is a teaching assistant in a course about networking protocols. His research interests include Super-Wifi communications, Open Data, Big Data, public administration data and regulation. He participates in the 'Commons for Europe' and 'Open Cities' European projects. 
-\begin{marginfigure}
-\includegraphics[width=0.5\linewidth]{Albert}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.125\linewidth]{Albert}
 \caption{Albert Domingo}
-\end{marginfigure}
+\end{center}
+\end{figure}
 \item Someone from Digi -TBC (Digi International)
 \item Vanessa Gennarelli: She is Learning Lead at Peer 2 Peer University.
-\begin{marginfigure}
-\includegraphics[width=0.5\linewidth]{vanessa}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.125\linewidth]{vanessa}
 \caption{Vanessa Gennarelli}
-\end{marginfigure}
+\end{center}
+\end{figure}
 \item Manuel Palacin -TBC (Universitat Pompeu Fabra)
 \item Alex Posada (Media Interaction Design Lab): He is the founder and CEO at Media Interactive Design (MID) and also coordinates the Interaction Lab at hangar.org . Alex teaches in the Master of Advanced Architecture and the Master of Advanced Interaction at the Institut d'Arquitectura Avancada de Catalunya (IAAC). Alex is a co-founder of the Smart Citizen Kit initiative.
-\begin{marginfigure}
-\includegraphics[width=0.5\linewidth]{alex}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.125\linewidth]{alex}
 \caption{Alex Posada}
-\end{marginfigure}
+\end{center}
+\end{figure}
 \item And you, if you want. Anyone is invited to join the team and collaborate.
 \end{itemize}
 \end{itemize}
 
 
-
-\backmatter
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-\bibliography{bibliography} % Use the bibliography.bib file for the bibliography
-\bibliographystyle{plainnat} % Use the plainnat style of referencing
-
-%----------------------------------------------------------------------------------------
-
-\printindex % Print the index at the very end of the document
+\begin{thebibliography}{9}
+  % type bibliography here
+\end{thebibliography}
 
 \end{document}
